@@ -51,7 +51,6 @@ table {
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Molle:ital@1&family=Montserrat:wght@400;600&display=swap');
 
-/* CSS Variables */
 :root {
     --white: #ffffff;
     --blue-light: #52BDD6;
@@ -64,27 +63,6 @@ table {
     --heading-font: 'Molle', cursive;
     --body-font: 'Montserrat', sans-serif;
 }
-
-
-/*global styles*/
-body {
-	font-family: 'Montserrat', sans-serif;
-	background: #ffffff;
-	color: #333;
-	line-height: 1.6;
-	margin: 0;
-	padding: 0;
-}
-
-h1, h2, h3, h4, h5, h6 {
-	font-family: 'Molle', cursive;
-	color: var(--black)
-}
-
-h1 { font-size: 3rem; }
-h2 { font-size: 2.5rem; }
-h3 { font-size: 2rem; }
-h4 { font-size: 1.5rem; }
 
 /* Skip Link */
 #skip {
@@ -101,235 +79,20 @@ h4 { font-size: 1.5rem; }
 #skip:focus {
     left: 10px;
 }
-
-/* Header */
-header {
-    width: 100%;
-    display: flex;
-    background: linear-gradient(to bottom, var(--blue-light), var(--white));
-    color: var(--black);
-    padding: 1rem 0;
+#header{
+    background: linear-gradient(to bottom, var(--blue-dark), var(--white));
 }
 
-#logo {
-    padding: 0
-}
-
-a{
-    display: block;
-    padding: 1rem;
-    color: var(--yellow)
-}
-header h1 {
-    margin: 0;
-
-}
-
-header p {
-    display: flex;
-    width: 100%;
-    margin-top: 5px;
-}
-
-/* Navigation */
-.sr-only{
-	position: absolute;
-	left: -10000px;
-	top: auto;
-	width: 1px;
-	height: 1px;
-	overflow: hidden;
-}
-nav li{
-	background-color: var(--blue-light);
-}
-nav a{
-	text-align: center;
-	color: var(--dark-gray);
-	text-decoration: none;
-	font-weight: bold;
-	letter-spacing: 1px;
-	font-size: 1.15rem;
-}
-
-nav {
-    flex-grow: 1;
-    text-align: right;
-}
-
-#menutoggel h2 {
-    display: none;
-  }
-
-nav ul {
-    display: flex;
-    justify-content: flex-end;
-    list-style: none;
-    background: var(--white);
-    padding: 10px;
-}
-
-nav ul li.active a {
-    background: var(--yellow);
-    border-radius: 5px;
-}
-
-/* Main Content */
-
-/*INTRO*/
-
-#intro {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: 40px;
-    padding: 50px 10%;
-}
-#intro-text {
-    grid-column: 1 / 2;
-    width: 45%;
-}
-
-#intro h2 {
-    font-size: 3rem;
-    color: var(--black);
-}
-
-#intro p {
-    font-size: 1.2rem;
-}
-#img-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 15px;
-   
-}
-#img-grid img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-/* Plan Section */
-#plan {
-    background: var(--yellow);
-    padding: 50px;
-    text-align: center;
-}
-
-#plan div {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-}
-
-/* Testimonials */
-#testimonials {
-    padding: 50px;
-    text-align: center;
-}
-
-#testimonials div {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-}
-
-#testimonials section img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-}
-
-/* About Section */
-#about {
-    background: var(--blue-dark);
-    color: var(--white);
-    padding: 50px;
-    text-align: center;
-}
-
-#about div {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-}
-
-/* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Molle:ital@1&family=Montserrat:wght@400;600&display=swap');
-
-/* CSS Variables */
-:root {
-    --white: #ffffff;
-    --blue-light: #52BDD6;
-    --black: #000000;
-    --navy-blue: #005f99;
-    --yellow: #F9D747;
-    --blue-dark: #489BD2;
-    --purple: #8F3E97;
-    --light-gray: #cccccc;
-    --heading-font: 'Molle', cursive;
-    --body-font: 'Montserrat', sans-serif;
-}
-
-/* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: var(--body-font);
-    color: var(--black);
-    background-color: var(--white);
-    line-height: 1.6;
-}
-
-/* Skip Link - Hidden but Accessible */
-#skip {
-    position: absolute;
-    left: -999px;
-    top: 10px;
-    background: var(--yellow);
-    padding: 10px;
-    text-decoration: none;
-    color: var(--black);
-    transition: left 0.3s ease-in-out;
-}
-
-#skip:focus {
-    left: 10px;
-}
-
-/* Header */
-header {
-    display: flex;
-    align-items: right;
-    justify-content: space-between;
-    background: linear-gradient(to bottom, var(--blue-light), var(--white));
-    color: var(--black);
-    padding: 20px;
-}
-
-#logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-#logo img {
-    height: 60px;
-}
-
-header h1 {
+h1 {
     font-family: var(--heading-font);
+    font-style: italic;
     font-size: 2rem;
     margin: 0;
     color: var(--black)
 }
 h2 {
     font-family: var(--heading-font);
+    font-style: italic;
     font-size: 2rem;
     margin: 0;
 }
@@ -364,49 +127,215 @@ q {
     color: var(--black)
 
 }
+/*--------------------------------MOBIL-----------------------------------*/
+
+/*--------------- Header ------------------*/
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: linear-gradient(to bottom, var(--blue-dark), var(--white));
+    padding: 20px;
+    text-align: left;
+    justify-content: space-between;
+}
+
+/* Logo */
+#logo img {
+    width: 80px;
+    height: auto;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: var(--black); 
+    font-style: italic;
+    font-family: var(--heading-font);
+    margin-top: 10px;
+}
+
 
 header p {
-    text-align: left;
-    width: 100%;
+    font-size: 1rem;
+    color: var(--black); 
+    font-family: var(--body-font);
     margin-top: 5px;
 }
 
+
 nav {
-    flex-grow: 1;
-    text-align: right;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    width: 30%;
 }
 
-/* Navigation */
-nav ul {
+
+.sr-only {
+    position: absolute;
+    left: -999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+
+#menutoggle {
     display: flex;
-    justify-content: flex-end;
-    list-style: none;
-    background: var(--white);
-    padding: 10px;
+    flex-direction: column;
+    align-items: right;
+    position: relative;
 }
 
-nav ul li {
-    margin: 0 10px;
-}
-nav ul {
-    display: grid;
-    grid-template-columns:repeat(4, 1fr);
+
+#toggle {
+    display: none;
 }
 
-nav ul li a {
+#menutoggle label {
+    font-family: var(--body-font);
+    text-align: center;
+    background: var(--yellow);
+    padding: 10px 20px;
+    color: var(--black);
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#menutoggle ul {
+    display: none;
+    flex-direction: column;
+    background: var(--blue-light);
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+#toggle:checked ~ ul {
+    display: flex;
+}
+
+#menutoggle ul li {
+    font-family: var(--body-font);
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid var(--white);
+}
+
+#menutoggle ul li a {
+    text-align: center;
     text-decoration: none;
     color: var(--black);
-    padding: 10px 15px;
+    font-size: 1.2rem;
     font-weight: 600;
+    display: block;
 }
 
-nav ul li.active a {
+#menutoggle ul li a:hover {
     background: var(--yellow);
-    border-radius: 5px;
+    color: var(--black);
+  width: auto;
+}
+
+/* Main Content */
+
+/*---------intro-----------------*/
+
+#intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    max-width: 100%;
 }
 
 
-/*Plan section*/
+#intro h2 {
+    font-size: 2rem;
+    font-family: var(--heading-font);
+    font-style: italic;
+    color: var(--black);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#intro p {
+    font-size: 1.1rem;
+    font-family: var(--body-font);
+    line-height: 1.6;
+    color: var(--black);
+    text-align: center;
+    max-width: 90%;
+    margin-bottom: 20px;
+}
+
+#img-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 500px;
+}
+
+#img-grid img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+/* ---------------- Plan Section---------------- */
+#plan {
+    background: var(--yellow);
+    padding: 50px;
+    text-align: center;
+}
+
+#plan div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+/*---------------- Testimonials---------------- */
+#testimonials {
+    padding: 50px;
+    text-align: center;
+}
+
+#testimonials div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+#testimonials section img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+/*---------------- About Section---------------- */
+#about {
+    background: var(--blue-dark);
+    color: var(--white);
+    padding: 50px;
+    text-align: center;
+}
+
+#about div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+
+
+/*---------------- Plan section---------------- */
 #plan {
     background: var(--yellow);
     padding: 50px;
@@ -435,7 +364,7 @@ nav ul li.active a {
     height: auto;
 }
 
-/* Contact Form */
+/*---------------- Contact Form ---------------- */
 #contact form {
     background: var(--white);
     padding: 40px;
@@ -469,7 +398,6 @@ input[type="submit"]:hover {
     background: var(--navy-blue);
 }
 
-/* Footer */
 footer {
     background: var(--light-gray);
     color: var(--black);
@@ -477,120 +405,186 @@ footer {
     padding: 20px;
 }
 
-@media (max-width: 1200px) {
-    
-    #contact form {
-        grid-template-columns: 1fr;
+/*-------------MEDIA-------------*/
+/*-------------Desktop-------------*/
+@media (max-width: 1200px) 
+{
+ #contact form {
+    grid-template-columns: 1fr;
     }
-    #plan div, #testimonials div, #about div {
-        grid-template-columns: repeat(2, 1fr);
+#plan div, #testimonials div, #about div {
+    grid-template-columns: repeat(2, 1fr);
     }
-    h2{
-        display: none;
-      }
-    #toggle{
-        display: none;
-      }
+
+header {
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    padding: 20px 50px;
+    text-align: left;
+    background: linear-gradient(to bottom, var(--blue-dark), var(--white));
 }
 
-@media (max-width: 768px) {
-    header{
-        grid-template-columns: 2fr 1fr;
-    }
-   
-    #plan div, #testimonials div, #about div {
-        grid-template-columns: 1fr;
-    }
-    nav h2 {
-        visibility:visible;
-        height:auto;
-        background-color: var(--yellow);
-        border:2px solid #ffffff;
-        color: white;
-        width: 150px;
-        cursor: pointer;
-        font-family: var(--body-font)
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+}
+
+#logo img {
+    width: 130px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    white-space: nowrap;
+}
+
+header p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin-top: 5px;
+}
+
+ nav {
+     position: absolute;
+     top: 15px;
+     right: 10px;
+     width: 30%;
+     display: flex;
+     justify-content: flex-end;
+     align-items: center;
+     width: auto;
+                }
     
-      }
-      nav {
-        position: relative;
-        display: inline-block;
-        top:25px;
-      }
-      nav ul {
+    #menutoggle {
+        display: flex;
+        justify-content: flex-end;
+         gap: 15px;
+        }
+    
+    #menutoggle label {
         display: none;
-        position: absolute;
-        background-color: var(--blue-light);
-        width:150px;
-        z-index: 1;
-        font-family: var(--body-font)
-      }
-      nav a {
-        color: #ffffff;
-        visibility: visible;
-        display:block;
-        text-align:center;
-      }
-      nav li {
-        border-bottom:1px solid #ffffff;
-      }
-      nav:hover ul {
-        display: block
-        color var(--yellow);
-      }
-      #intro {
-        grid-template-columns: 1fr;
+        }
+    
+       
+    #menutoggle ul {
+         display: flex;
+         flex-direction: row;
+         position: static;
+         background: transparent;
+         width: auto;
+         gap: 15px;
+         white-space: nowrap;
+        }
+    
+        #menutoggle ul li {
+            padding: 10px 15px;
+            background: var(--white);
+            text-align: center;
+            flex-shrink: 0; 
+        }
+
+        #menutoggle ul li a {
+            font-size: 1.2rem;
+            color: var(--black);
+            text-decoration: none;
+            display: block;
+        }
+
+        
+    }
+
+
+
+/*---------------TABLET-----------------*/
+@media (max-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        padding: 40px 20px;
+        justify-content: space-between;
+        background: linear-gradient(to bottom, var(--blue-dark), var(--white));
+    }
+    #logo img {
+        width: 120px; 
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+    header p {
+        font-size: 1.2rem;
+        max-width: 600px;
+    }
+
+    nav {
+        position: static;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    #menutoggle {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        width: 100%;
+    }
+
+    #menutoggle label {
+        display: none; 
+    }
+
+    #menutoggle ul {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        background: transparent;
+        width: auto;
+        white-space: nowrap;
+        gap: 15px;
+    }
+
+    #menutoggle ul li {
+        font-family: var(--body-font);
+        padding: 10px 15px;
+        background: var(--white);
         text-align: center;
     }
-    #img-grid {
+
+    #menutoggle ul li a {
+        font-size: 1.2rem;
+        color: var(--black);
+        text-decoration: none;
+        display: block;
+    }
+
+   
+ #plan div, #testimonials div, #about div {
         grid-template-columns: 1fr;
+
     }
 }
-
 @media (max-width: 480px) {
+    
+    
     #intro {
+        width: 100%;
         grid-template-columns: 1fr;
     }
     #img-grid {
         grid-template-columns: 1fr;
     }
-     nav h2 {
-        visibility:visible;
-        height:auto;
-        background-color: var(--yellow);
-        border:2px solid #ffffff;
-        color: white;
-        width: 150px;
-        cursor: pointer;
-        font-family: var(--body-font)
     
-      }
-      nav {
-        position: relative;
-        display: inline-block;
-        top:25px;
-      }
-      nav ul {
-        display: none;
-        position: absolute;
-        background-color: var(--blue-light);
-        width:150px;
-        z-index: 1;
-        font-family: var(--body-font)
-      }
-      nav a {
-        color: #ffffff;
-        visibility: visible;
-        display:block;
-        text-align:center;
-      }
-      nav li {
-        border-bottom:1px solid #ffffff;
-      }
-      nav:hover ul {
-        display: block
-        color var(--yellow);
-      }
     #contact form {
         grid-template-columns: 1fr;
     }
