@@ -406,14 +406,98 @@ footer {
 }
 
 /*-------------MEDIA-------------*/
+/*--------------- Mobile----------------*/
+
+#plan div, #testimonials div, #about div {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+
+/*---------------TABLET-----------------*/
+@media (min-width: 576px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        padding: 40px 20px;
+        justify-content: space-between;
+        background: linear-gradient(to bottom, var(--blue-dark), var(--white));
+    }
+    #logo img {
+        width: 120px; 
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+    header p {
+        font-size: 1.2rem;
+        max-width: 600px;
+    }
+
+    nav {
+        position: static;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    #menutoggle {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        width: 100%;
+    }
+
+    #menutoggle label {
+        display: none; 
+    }
+
+    #menutoggle ul {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        background: transparent;
+        width: auto;
+        white-space: nowrap;
+        gap: 15px;
+    }
+
+    #menutoggle ul li {
+        font-family: var(--body-font);
+        padding: 10px 15px;
+        background: var(--white);
+        text-align: center;
+    }
+
+    #menutoggle ul li a {
+        font-size: 1.2rem;
+        color: var(--black);
+        text-decoration: none;
+        display: block;
+    }
+
+   
+ #plan div, #testimonials div, #about div {
+    grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+
+
 /*-------------Desktop-------------*/
-@media (max-width: 1200px) 
+@media (min-width: 1200px) 
 {
  #contact form {
     grid-template-columns: 1fr;
     }
 #plan div, #testimonials div, #about div {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     }
 
 header {
@@ -502,90 +586,6 @@ header p {
 
 
 
-/*---------------TABLET-----------------*/
-@media (max-width: 768px) {
-    header {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        text-align: left;
-        padding: 40px 20px;
-        justify-content: space-between;
-        background: linear-gradient(to bottom, var(--blue-dark), var(--white));
-    }
-    #logo img {
-        width: 120px; 
-    }
 
-    header h1 {
-        font-size: 2.5rem;
-    }
-    header p {
-        font-size: 1.2rem;
-        max-width: 600px;
-    }
 
-    nav {
-        position: static;
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-        width: 100%;
-    }
 
-    #menutoggle {
-        display: flex;
-        justify-content: center;
-        gap: 15px;
-        width: 100%;
-    }
-
-    #menutoggle label {
-        display: none; 
-    }
-
-    #menutoggle ul {
-        display: flex;
-        flex-direction: row;
-        position: static;
-        background: transparent;
-        width: auto;
-        white-space: nowrap;
-        gap: 15px;
-    }
-
-    #menutoggle ul li {
-        font-family: var(--body-font);
-        padding: 10px 15px;
-        background: var(--white);
-        text-align: center;
-    }
-
-    #menutoggle ul li a {
-        font-size: 1.2rem;
-        color: var(--black);
-        text-decoration: none;
-        display: block;
-    }
-
-   
- #plan div, #testimonials div, #about div {
-        grid-template-columns: 1fr;
-
-    }
-}
-@media (max-width: 480px) {
-    
-    
-    #intro {
-        width: 100%;
-        grid-template-columns: 1fr;
-    }
-    #img-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    #contact form {
-        grid-template-columns: 1fr;
-    }
-}
